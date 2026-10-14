@@ -1,16 +1,14 @@
-# R_Project_Country_Clustering
+# About this project
 
-R project to group countries by socio-economic and health indicators.
+Started from a project for my class and now we're here.
 
-This project uses clustering to split 167 countries into groups with similar profiles. It shows how a company could choose which markets to enter, or how an NGO could target countries with similar needs instead of designing a program for each one.
-
-> Full walkthrough is in the slide deck: [add link here]
+This R project uses 2 clustering techniques, K-Means and Hierarchical Clustering, to group 167 countries based on similar profiles and compare which technique is more suitable for this dataset.
 
 ## Database and Tools
 
 - R (RStudio)
-- Packages: `tidyverse`, `cluster`, `factoextra`
-- Methods: K-Means (PAM), agglomerative hierarchical clustering (Ward), PCA
+- Packages: tidyverse, cluster, factoextra, dplyr, ggplot2, factoextra, cluster, corrplot, moments, readxl, rstatix, tidyr
+- Methods: K-Means (PAM), Agglomerative Hierarchical Clustering, PCA
 - Dataset: Country socio-economic data (167 countries, 9 indicators: child mortality, exports, health spending, imports, income, inflation, life expectancy, fertility, GDP per capita)
 
 ## Approach
@@ -31,21 +29,7 @@ This project uses clustering to split 167 countries into groups with similar pro
 
 ## Files
 
-- `clustering.R`: full analysis, from data loading to validation
-- `data/`: dataset
-- `images/`: plots used in this README
-
-## How to Run
-
-1. Open `clustering.R` in RStudio.
-2. Install the packages: `install.packages(c("tidyverse", "cluster", "factoextra"))`
-3. Set the working directory to the project folder and run the script.
-
-## Limitations
-
-- Clusters describe this dataset only and reflect the indicators chosen.
-- Silhouette scores are modest, so country groups overlap at the edges.
-
-## Author
-
-Thanapol Shongtuptim · [LinkedIn](https://www.linkedin.com/in/YOUR-PROFILE)
+- dataset
+- R code
+- full report in PDF
+- slide deck in PDF
